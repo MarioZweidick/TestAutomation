@@ -3,10 +3,9 @@ public class Rectangle {
     double width;
     double height;
 
-
     public Rectangle(double width, double height) {
         this.width = checkInputParameter(width, "width");
-        this.height = height;
+        this.height = checkInputParameter(height, "height");
     }
 
     /**
@@ -15,8 +14,8 @@ public class Rectangle {
      * @return  den Flöcheninhalt
      */
     public double calculateArea() {
-        // please implement method
-        return 0;
+
+        return width * height;
     }
 
     /**
@@ -25,7 +24,7 @@ public class Rectangle {
      */
     public double calculateScope() {
         // please implement method
-        return 0;
+        return 2 * (width + height);
     }
 
     /**
